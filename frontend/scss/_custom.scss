@@ -1,0 +1,33 @@
+// variables
+$black: #000;
+
+
+
+
+
+//end of variables
+.heroimg {
+    background: url(../images/Photo.png) no-repeat center left;
+    width: 70%;
+    height: auto;
+    margin-left: 30%;
+}
+
+.active {
+    border-bottom: solid 2px #000ff0 !important;
+    padding-bottom: 5px;
+
+}
+
+.card{
+    margin-left: -15%;
+}
+
+.spacer {
+    background: $black;
+    width: 5%;
+    height: 3px;
+    display: inline-block;
+}
+
+
