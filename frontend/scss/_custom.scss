@@ -1,22 +1,33 @@
 // variables
 $black: #000;
+$primary: blue;
+$secondary : green;
 
 
+$spacer: 1rem;
+$spacers: (
+    6: ($spacer * 7),
+    );
 
+$sizes: (
+    70 : 70%,
+);
+
+
+$navbar-light-active-color:  $black;
+$navbar-light-hover-color:  $primary;
 
 
 //end of variables
+
 .heroimg {
-    background: url(../images/Photo.png) no-repeat center left;
-    width: 70%;
-    height: auto;
-    margin-left: 30%;
+    background: url(/web/images/Photo.png) no-repeat center left;
+    background-size: cover;   
 }
 
 .active {
-    border-bottom: solid 2px #000ff0 !important;
+    border-bottom: solid 2px $primary;
     padding-bottom: 5px;
-
 }
 
 .card{
@@ -29,5 +40,8 @@ $black: #000;
     height: 3px;
     display: inline-block;
 }
+
+
+
 
 
