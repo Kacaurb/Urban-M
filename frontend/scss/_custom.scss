@@ -1,15 +1,15 @@
 // variables
 $black: #000;
-$primary: blue;
-$secondary : green;
+$primary: rgb(9, 9, 88);
+$secondary : rgb(5, 41, 48);
+$info: rgb(206, 219, 240);
 
 
 $spacer: 1rem;
 $spacers: (6: ($spacer * 7),
 );
 
-$sizes: (70 : 70%,
-);
+$sizes: (70 : 70%,);
 
 
 $navbar-light-active-color: $black;
@@ -18,9 +18,11 @@ $navbar-light-hover-color: $primary;
 
 //end of variables
 
-.heroimg {
-    background: url('../images/Photo.png') no-repeat center left;
-    background-size: cover;
+body {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 1.625em;
 }
 
 .active1 {
@@ -28,9 +30,6 @@ $navbar-light-hover-color: $primary;
     padding-bottom: 5px;
 }
 
-.card {
-    margin-left: -15%;
-}
 
 .spacer {
     background: $black;
@@ -44,26 +43,25 @@ $navbar-light-hover-color: $primary;
 }
 
 .heightimg {
-    max-height: 750px;
+    max-height: 100vh;
 }
 
 .downbtn {
     margin-top: -15vh;
     margin-left: 50%;
-    z-index: 2;
+    z-index: 2; }
     @media (min-width: 320px) and (max-width: 480px) {
-  
-        display: none;
+        .downbtn{
+        display: none;}
         
       }
     
     @media (min-width: 768px) and (max-width: 1024px) {
-  
-        margin-top: -10vh;
+        .downbtn{
+        margin-top: -10vh;}
         
       }
 
-}
 
 .carousel{
     a{
@@ -71,3 +69,94 @@ $navbar-light-hover-color: $primary;
     }
     
 }
+
+
+
+
+
+
+// Section 1
+
+.section-gap {
+    padding: 120px 0;
+}
+
+.pb-50 {
+    padding-bottom: 50px;
+}
+
+h1 {
+    font-size: 36px;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.single-service {
+    text-align: center;
+    border: 1px solid $info;
+    border-radius: 10px;
+    transition: all 0.3s ease 0s;
+    padding: 20px;
+}
+
+.single-service:hover {
+    background-color: $secondary;
+    border-color: $secondary;
+}
+
+@media (max-width: 1024px){
+.single-service {
+    padding: 22px;
+}
+}
+
+
+a{
+    a:focus{
+    text-decoration: none;
+    outline: 0;
+}
+    a:hover {
+    text-decoration: none;
+    outline: 0;
+}
+}
+
+a {
+    transition: all 0.3s ease 0s;
+}
+
+.single-service {
+    h4 {
+    margin-bottom: 20px;
+}
+}
+
+h4 {
+    font-size: 18px;
+}
+
+.single-service {
+    p {
+    margin-bottom: 0;
+    text-align: center;
+}
+}
+
+.single-service:hover {
+    h4 {
+    color: $info;
+}
+}
+
+.single-service:hover {
+    p {
+    color: $info;
+}
+}
+
+
+
+
+
+
+
