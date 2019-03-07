@@ -22,26 +22,29 @@ $navbar-light-hover-color: $primary;
 
 //end of variables
 
-body {
+*{
     font-family: 'Quicksand', sans-serif;
     font-weight: 300;
     line-height: 1.625em;
 }
 
 .active1 {
-    border-bottom: solid 2px $primary;
-    padding-bottom: 5px;
+    border-bottom: solid 2px $info;
+}
+
+.nav-item:hover{
+    border-bottom: solid 2px $info;
 }
 
 
 .bg-opacity {
-    opacity: 0.7;
+    opacity: 0.9;
 }
 
 
 // Header
 .position-heading{
-    text-shadow: 1px 1px #fff;
+    text-shadow: 1px 1px $info;
 }
 
 .heightimg {
@@ -108,24 +111,12 @@ body {
     }
 }
 
-
-
-
 // End of Header
 
-// Section 1
+// Section 1 (Service)
 
 .section-gap {
     padding: 120px 0;
-}
-
-.pb-50 {
-    padding-bottom: 50px;
-}
-
-h1 {
-    font-size: 36px;
-    font-family: 'Quicksand', sans-serif;
 }
 
 .single-service {
@@ -155,19 +146,7 @@ h1 {
 }
 
 
-a {
-    a:focus {
-        text-decoration: none;
-        outline: 0;
-    }
-
-    a:hover {
-        text-decoration: none;
-        outline: 0;
-    }
-}
-
-a {
+.a-transition {
     transition: all 0.3s ease 0s;
 }
 
@@ -177,9 +156,6 @@ a {
     }
 }
 
-h4 {
-    font-size: 18px;
-}
 
 .single-service {
     p {
@@ -200,13 +176,56 @@ h4 {
     }
 }
 
-// End of Section 1
 
-// Section 2
+// End of Section 1 (Service)
+
+// Section 3 (Projects part2)
+.overlay {
+    position: absolute;
+    top: 3%;
+    bottom: 3%;
+    left: 3%;
+    right: 3%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #121212;
+  }
+  
+.thumbnail:hover .overlay {
+    opacity: 0.8;
+    border-radius: 10px;
+  }
+  
+.text {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  
+.spacer{
+    width: 40%;
+    height: 2px;
+    background-color: $info;
+  }
+
+.image{
+    border-radius: 15px;
+}
+
+// End of section 3 (Projects part2)
 
 
-// End of Section 2
 
-// Section 3
+
+
+
+
+
 
 
