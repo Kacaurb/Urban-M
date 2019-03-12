@@ -1,0 +1,77 @@
+// Header
+.position-heading {
+    text-shadow: 0.8px 0.8px $secondary;
+}
+
+.heightimg {
+    max-height: 100vh;
+}
+
+.downbtn {
+    margin-top: -15vh;
+    margin-left: 48%;
+    z-index: 2;
+    /*
+    display: none;
+    @include media-breakpoint-up(sm) {
+        margin-top: -10vh;
+        display: block;
+    }
+    */
+}
+
+.carousel-caption {
+    margin-top: 30vh !important;
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+    .downbtn {
+        display: none;
+    }
+
+
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .downbtn {
+        margin-top: -10vh;
+    }
+
+}
+
+
+//  Carousel
+
+.carousel {
+    a {
+        height: 100vh !important;
+    }
+
+}
+
+@media (min-width: 576px) {
+    .carousel-caption {
+        margin-bottom: 200px;
+    }
+}
+
+
+@media (max-width: 414px) {
+    .position-heading {
+        margin-top: 40vh !important;
+    }
+}
+
+@media (min-width: 768px) {
+    .carousel-caption {
+        margin-bottom: 200px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .carousel-caption {
+        margin-bottom: 400px;
+    }
+}
+
+// End of Header
