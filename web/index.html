@@ -2,210 +2,520 @@
 <html lang="en">
 
 <head>
-    <title>Architecture & Design</title>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet" href="stylesheets/style.min.css">
-    <link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+  <title>Architecture & Design</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="stylesheets/style.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  <link rel="icon" type="image/png" href="images/favicon.png" />
 </head>
 
 <body>
-    <!--nav-->
-    <nav class=" navbar py-1 fixed-top navbar-expand-lg navbar-light bg-light bg-opacity rounded-bottom">
-        <div class="container">
-            <div class="navbar-brand">
-                <img width="10%" src="images/logotip.png">
-                <button class="navbar-toggler float-right" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
-                    aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-            </div>
-            <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
-                <div class="navbar-nav">
-                    <a class="nav-item nav-link mx-3 active active1" href="#">Home</a>
-                    <a class="nav-item nav-link mx-3" href="#service">Service</a>
-                    <a class="nav-item nav-link mx-3" href="#projects">Projects</a>
-                    <a class="nav-item nav-link mx-3" href="#about">About</a>
-                    <a class="nav-item nav-link mx-3" href="#contact" tabindex="-1">Contact</a>
-                </div>
-            </div>
+  <!--nav-->
+  <nav class="navbar py-1 fixed-top navbar-expand-lg navbar-dark bg-dark bg-opacity">
+    <div class="container">
+      <div class="navbar-brand">
+        <img width="10%" src="images/logotip.png">
+        <button class="navbar-toggler float-right" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      </div>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <a class="nav-item nav-link mx-3 active active1" href="#">Home</a>
+          <a class="nav-item nav-link mx-3" href="#portfolio">Portfolio</a>
+          <a class="nav-item nav-link mx-3" href="#about">About</a>
+          <a class="nav-item nav-link mx-3" href="#contact" tabindex="-1">Contact</a>
         </div>
-    </nav>
+      </div>
+    </div>
+  </nav>
 
-    <!--End nav-->
+  <!-- To top btn -->
+  <div id="to-top-btn" class="d-block">
+    <button class="btn btn-primary bg-transparent">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+  </div>
+  <!-- End 'to top btn' -->
+
+  <!--End nav-->
 
 
 
 
-    <!--Header-->
-    <header>
-        <div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel">
-            <div class="carousel-inner heightimg">
-                <div class="carousel-caption position-heading text-secondary">
-                    <h2>URBAN MAJA</h2>
-                    <p>ARCHITECTURE</p>
-                </div>
-                <div class="carousel-item active">
-                    <img src="images/img1.jpg" class="fix d-block w-100 h-100" alt="...">
-                </div>
-                <div class="carousel-item">
-                    <img src="images/img2.jpg" class="d-block w-100 h-100" alt="...">
-                </div>
-            </div>
-            <a href="#service">
-                <img src="images/downbtn.png" alt="" width="4%" height="auto" class="position-absolute downbtn">
+  <!--Header-->
+  <header id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel">
+    <div class="carousel-inner heightimg">
+      <div class="carousel-caption position-heading text-secondary">
+        <p class="naslov">URBAN MAJA</p>
+        <p class="podnaslov">ARCHITECTURE</p>
+      </div>
+      <div class="carousel-item active">
+        <img src="images/Carousel1.jpg" class="fix d-block w-100 h-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="images/Carousel2.jpg" class="d-block w-100 h-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="images/Carousel3.jpg" class="d-block w-100 h-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="images/Carousel4.jpg" class="d-block w-100 h-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="images/Carousel5.jpg" class="d-block w-100 h-100" alt="...">
+      </div>
+    </div>
+    <a href="#portfolio">
+      <img src="images/downbtn.png" alt="" width="4%" height="auto" class="position-absolute downbtn">
+    </a>
+  </header>
+  <!--End header-->
+
+  <!-- Section 1 (Portfolio)-->
+  <section class="section-gap" id="portfolio">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="pb-50 text-center">
+          <h1>PORTFOLIO</h1>
+          <p class="pb-4">What we offer to our clients</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-4">
+          <div class="single-service">
+            <a href="#archdesign" class="text-decoration-none a-transition">
+              <h4>Architectural design</h4>
+              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
+                scrambled it to make a type specimen book.</p>
             </a>
+          </div>
         </div>
-    </header>
-    <!--End header-->
-
-    <!-- Section 1-->
-    <section class="service-area section-gap" id="service">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-md-12 pb-50 header-text text-center">
-                    <h1 class="mb-10">What we offer to our clients</h1>
-                    <p>
-                        Quality may be as much about perception as it is about reality
-                    </p>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-4">
-                    <div class="single-service">
-                        <a href="#">
-                            <h4>Interior Design</h4>
-                        </a>
-                        <p>Interior design is the art and science of enhancing the interior of a building to achieve a
-                            healthier and more aesthetically pleasing environment for the people using the space.</p>
-                    </div>
-                </div>
-                <div class="col-lg-4">
-                    <div class="single-service">
-                        <a href="#">
-                            <h4>Architecture Design</h4>
-                        </a>
-                        <p>Architectural Design, also known as AD, is a UK-based architectural journal first launched
-                            in 1930 as Architectural Design and Construction. The journal is currently published by
-                            John Wiley & Sons, and is edited by Helen Castle since 2001</p>
-                    </div>
-                </div>
-                <div class="col-lg-4">
-                    <div class="single-service">
-                        <a href="#">
-                            <h4>Exterior Design</h4>
-                        </a>
-                        <p>Exterior design is the process of designing the exterior of the building. This includes the
-                            facade, "skin", roof, and foundational elements. While exterior design can be just as
-                            creative and artistic as interior, a knowledge of structural engineering is necessary.</p>
-                    </div>
-                </div>
-            </div>
+        <div class="col-lg-4">
+          <div class="single-service">
+            <a href="#interiordesign" class="text-decoration-none a-transition">
+              <h4>Interion design</h4>
+              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
+                scrambled it to make a type specimen book.</p>
+            </a>
+          </div>
         </div>
-    </section>
-
-    <!--End of Section 1 -->
-
-
-    <!-- Section 2 -->
-    <section class="section-gap bg-secondary" id="Projects">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-lg-6 text-info">
-                    <h6 class="text-uppercase">Architecture</h6>
-                    <p class="h3"><i>"Inspiration is for amateurs, the rest<br>
-                            of us just show up and get to work."</i> <br>Chuck Clouse</p>
-                    <p> Architecture is both the process and the product of planning,<br> designing, and constructing
-                        buildings or any other structures.</p>
-                    <a class="m-2 btn btn-outline-info mt-30" href="#projects">See our projects</a>
-                </div>
-                <div class="col-lg-6 justify-content-center align-items-center d-flex relative">
-                    <div class="overlay overlay-bg"></div>
-                    <img class="m-1 img-fluid rounded mx-auto" src="images/project1.jpg" alt=""></a>
-                </div>
-            </div>
+        <div class="col-lg-4">
+          <div class="single-service">
+            <a href="#furnituredesign" class="text-decoration-none a-transition">
+              <h4>Furniture design</h4>
+              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
+                scrambled it to make a type specimen book.</p>
+            </a>
+          </div>
         </div>
-    </section>
-    <!--End of Section 2 -->
+      </div>
+    </div>
+  </section>
 
-    <!-- Section 3 -->
-    <section class="gallery-area section-gap">
-        <div class="container">
-            <div class="row d-flex justify-content-center">
-                <div class="col-md-12 pb-40 header-text text-center">
-                    <h1 class="pb-10">Our Recent Works may impress you</h1>
-                    <p>
-                        Who are in extremely love with eco friendly system.
-                    </p>
-                </div>
-            </div>							
-            <div class="row">
-                <div class="col-lg-8">
-                    <div class="single-gallery">
-                        <div class="content">
-                            <a href="#" target="_blank">
-                              <div class="content-overlay"></div>
-                                   <img class="content-image img-fluid d-block mx-auto" src="images/Photo4.png" alt="">
-                              <div class="content-details fadeIn-bottom">
-                                <h3 class="content-title mx-auto">Lavendar ambient interior</h3>
-                                <a href="project-details.html" class="primary-btn text-uppercase mt-20">More Details</a>
-                              </div>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4">
-                    <div class="single-gallery">
-                        <div class="content">
-                            <a href="#" target="_blank">
-                              <div class="content-overlay"></div>
-                                   <img class="content-image img-fluid d-block mx-auto" src="images/enterijer1.jpg" alt="">
-                              <div class="content-details fadeIn-bottom">
-                                <h3 class="content-title mx-auto">Ambient interior</h3>
-                                <a href="project-details.html" class="primary-btn text-uppercase mt-20">More Details</a>
-                              </div>
-                            </a>
-                        </div>
-                    </div>
-                </div>	
-                <div class="col-lg-4">
-                    <div class="single-gallery">
-                        <div class="content">
-                            <a href="#" target="_blank">
-                              <div class="content-overlay"></div>
-                                   <img class="content-image img-fluid d-block mx-auto" src="images/enterijer2.jpg" alt="">
-                              <div class="content-details fadeIn-bottom">
-                                <h3 class="content-title mx-auto">Ambient interior</h3>
-                                <a href="project-details.html" class="primary-btn text-uppercase mt-20">More Details</a>
-                              </div>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-8">
-                    <div class="single-gallery">
-                        <div class="content">
-                            <a href="#" target="_blank">
-                              <div class="content-overlay"></div>
-                                   <img class="content-image img-fluid d-block mx-auto" src="images/Photo7.png" alt="">
-                              <div class="content-details fadeIn-bottom">
-                                <h3 class="content-title mx-auto">Lavendar ambient interior</h3>
-                                <a href="project-details.html" class="primary-btn text-uppercase mt-20">More Details</a>
-                              </div>
-                            </a>
-                        </div>
-                    </div>
-                </div>												
+  <!--End of Section 1 (Portfolio)-->
+
+
+  <!-- Section 2 (Arch design)-->
+  <section class="section-gap bg-secondary contaienr-fluid" id="archdesign">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-6 text-info">
+          <h6 class="text-uppercase">Architecture</h6>
+          <p class="h3"><i>"Inspiration is for amateurs, the rest<br>
+              of us just show up and get to work."</i> <br>Chuck Clouse</p>
+          <p> Architecture is both the process and the product of planning,<br> designing, and constructing
+            buildings or any other structures.</p>
+          <a class="m-2 btn btn-outline-info mt-30" href="#projects">See our projects</a>
+        </div>
+        <div class="col-lg-6 justify-content-center align-items-center d-flex relative">
+          <div class="overlay overlay-bg"></div>
+          <img class="m-1 img-fluid rounded mx-auto" src="images/project1.jpg" alt=""></a>
+        </div>
+      </div>
+    </div>
+    <div id="carouselExampleControls" class="carousel slide " data-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="row ">
+            <div class="col-md-3 d-flex justify-content-center">
+              <img width="100%" data-toggle="modal" data-target="#modal1" style="cursor:pointer" height="100%" src="images/1.jpg"
+                alt="">
             </div>
-        </div>	
-    </section>
+            <div class="col-md-3 d-flex justify-content-center">
+              <img width="100%" data-toggle="modal" data-target="#modal2" style="cursor:pointer" height="100%" src="images/2.jpg"
+                alt="">
+            </div>
+            <div class="col-md-3 d-flex justify-content-center">
+              <img width="100%" data-toggle="modal" data-target="#modal3" style="cursor:pointer" height="100%" src="images/3.jpg"
+                alt="">
+            </div>
+            <div class="col-md-3 d-flex justify-content-center">
+              <img width="100%" data-toggle="modal" data-target="#modal4" style="cursor:pointer" height="100%" src="images/4.jpg"
+                alt="">
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="row">
+            <div class="col-md-3 d-flex justify-content-center gal-call">
+              <img width="100%" data-toggle="modal" data-target="#modal5" style="cursor:pointer" height="100%" src="images/5.jpg"
+                alt="">
+            </div>
+            <div class="col-md-3 d-flex justify-content-center">
+              <img width="100%" data-toggle="modal" data-target="#modal6" style="cursor:pointer" height="100%" src="images/6.jpg"
+                alt="">
+            </div>
+            <div class="col-md-3 d-flex justify-content-center">
+              <img width="100%" data-toggle="modal" data-target="#modal7" style="cursor:pointer" height="100%" src="images/7.jpg"
+                alt="">
+            </div>
+            <div class="col-md-3 d-flex justify-content-center">
+              <img width="100%" data-toggle="modal" data-target="#modal8" style="cursor:pointer" height="100%" src="images/8.jpg"
+                alt="">
+            </div>
+          </div>
+        </div>
+        <a class="carousel-control-prev" style="width: 100px; background: black;" href="#carouselExampleControls" role="button"
+          data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" style="width: 100px; background: black;" href="#carouselExampleControls" role="button"
+          data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+  </section>
+  <!--End of Section 2 (Arch design)-->
+
+  <!-- Section 3 (Interion design)-->
 
 
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="javascript/main.min.js"></script>
+
+  <section class="container" id="projects">
+    <div class="m-5 pt-6 text-center">
+      <h1>Our Recent Works may impress you</h1>
+      <p>Interior Design ~ Architecture Design ~ Exterior Design
+      </p>
+    </div>
+    <div class="row">
+      <div class="col-md-8 thumbnail px-2">
+        <img class="w-100 h-100 p-2 image" src="images/gallery-1.jpg" alt="">
+        <div class="overlay">
+          <div class="text">
+            <p class="h3 text-info">Project</p>
+            <hr class="spacer">
+            <p class="h6 text-secondary">Lorem ipsum dolor sit.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 thumbnail">
+        <img class="w-100 h-100 p-2 image" src="images/gallery-3.jpg" alt="">
+        <div class="overlay m-4">
+          <div class="text">
+            <p class="h3 text-info">Project</p>
+            <hr class="spacer">
+            <p class="h6 text-secondary">Lorem ipsum dolor sit.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-4 thumbnail">
+        <img class="w-100 h-100 p-2 image" src="images/gallery-4.jpg" alt="">
+        <div class="overlay m-4">
+          <div class="text">
+            <p class="h3 text-info">Project</p>
+            <hr class="spacer">
+            <p class="h6 text-secondary">Lorem ipsum dolor sit.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-8 thumbnail px-2">
+        <img class="w-100 h-100 p-2 image" src="images/gallery-2.jpg" alt="">
+        <div class="overlay">
+          <div class="text">
+            <p class="h3 text-info">Project</p>
+            <hr class="spacer">
+            <p class="h6 text-secondary">Lorem ipsum dolor sit.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--End of Section 3 (Interior design) -->
+
+
+
+  <!-- About -->
+  <section class="container-fluid mt-6" id="about">
+    <div class="row">
+      <div class="col-md-6 arch-img">
+        <img src="images/arch-bg.jpg" alt="" class="img-fluid mx-auto w-100">
+      </div>
+      <div class="float-right col-md-6 mt-3 mb-3">
+        <h6 class="text-uppercase">Master Architect</h6>
+        <h1>About me</h1>
+        <p>
+          <span>My name is Maja Urban and I am 27 years old architect from Serbia. My passion is
+            architecture, but I am also very interested in art & design as well as in technical
+            science. I
+            graduated Architecture and Urban Planning at Faculty of Technical Science in Novi Sad</span>
+        </p>
+        <p>
+          <span>My first experience was on a civil site. There I learned how much complex the realization
+            of
+            project can be.
+
+            At the same time I was developing some interior design and technical drawings of custom
+            made
+            furniture. As time was passing I concluded that the furniture production could be as
+            complex as
+            the processes on the civil site.
+
+            In order to keep up with these challenges I am trying to absorb more technical knowledge
+            and
+            experience. But in spite of that, I have to conclude that the thinking process is the more
+            harder. Therefore, after all this great effort, your creation must communicate, inspire,
+            innovate and push the envelope or it won’t be successful.</span>
+        </p>
+      </div>
+    </div>
+  </section>
+  <!-- About -->
+
+  <!-- Contact -->
+
+  <section class="bg-secondary" id="contact">
+    <div class="row">
+      <div class="col-lg-4 p-6">
+        <div class="d-block">
+          <div class="d-inline-block mr-3">
+            <img src="images/home.svg" width="25px" alt="">
+          </div>
+          <div class="text-info d-inline-block">
+            <h5>Novi Sad, Serbia</h5>
+          </div>
+        </div>
+        <div class="d-block">
+          <div class="d-inline-block mr-3">
+            <img src="images/call.svg" width="25px" alt="">
+          </div>
+          <div class="text-info d-inline-block">
+            <h5>+381 66 206 207</h5>
+            <p>Mon to Fri 9am to 6 pm</p>
+          </div>
+        </div>
+        <div class="d-block">
+          <div class="d-inline-block mr-3">
+            <img src="images/email.svg" width="25px" alt="">>
+          </div>
+          <div class="text-info d-inline-block">
+            <h5>urbmaja@gmail.com</h5>
+            <p>Send us your query anytime!</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-8 p-6">
+        <form class="form-area" class="contact-form text-right">
+          <div class="row">
+            <div class="col-lg-6 form-group">
+              <input name="name" placeholder="Enter your name" class="mb-20" type="text">
+
+              <input name="email" placeholder="Enter email address" class="mb-20" type="email">
+
+              <input name="subject" placeholder="Enter your subject" class="mb-20" type="text">
+            </div>
+            <div class="col-lg-6 form-group">
+              <textarea class="common-textarea" placeholder="Enter your message" name="message"></textarea>
+            </div>
+            <div class="col-lg-12">
+              <div style="text-align: left;"></div>
+              <button class="m-2 btn btn-outline-info mt-30" style="float: right;">Send Message</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+  <!-- Contact -->
+
+
+  <!-- Modal 1-->
+  <div class="modal fade" id="modal1" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalCenterTitle">Project title</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <img width="100%" data-toggle="modal" style="cursor:pointer" height="100%" src="images/1.jpg" alt="">
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 2-->
+  <div class="modal fade" id="modal2" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalCenterTitle">Project title</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <img width="100%" data-toggle="modal" style="cursor:pointer" height="100%" src="images/2.jpg" alt="">
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Modal 3-->
+  <div class="modal fade" id="modal3" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalCenterTitle">Project title</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <img width="100%" data-toggle="modal" style="cursor:pointer" height="100%" src="images/3.jpg" alt="">
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 4-->
+  <div class="modal fade" id="modal4" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalCenterTitle">Project title</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <img width="100%" data-toggle="modal" style="cursor:pointer" height="100%" src="images/4.jpg" alt="">
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 5-->
+  <div class="modal fade" id="modal5" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalCenterTitle">Project title</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <img width="100%" data-toggle="modal" style="cursor:pointer" height="100%" src="images/5.jpg" alt="">
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 6-->
+  <div class="modal fade" id="modal6" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalCenterTitle">Project title</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <img width="100%" data-toggle="modal" style="cursor:pointer" height="100%" src="images/6.jpg" alt="">
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 7-->
+  <div class="modal fade" id="modal7" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalCenterTitle">Project title</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <img width="100%" data-toggle="modal" style="cursor:pointer" height="100%" src="images/7.jpg" alt="">
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 8-->
+  <div class="modal fade" id="modal8" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalCenterTitle">Project title</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <img width="100%" data-toggle="modal" style="cursor:pointer" height="100%" src="images/8.jpg" alt="">
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="javascript/main.min.js"></script>
+  <script src="javascript/custom.js"></script>
 </body>
 
 </html>
