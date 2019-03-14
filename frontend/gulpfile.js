@@ -48,7 +48,7 @@ gulp.task('font-copy', function () {
     './fonts/**/*.{otf,ttf,woff,woff2,svg,eot}'
   ];
   return gulp.src(fontPaths)
-      .pipe(gulp.dest('../web/fonts'));
+      .pipe(gulp.dest('../web/webfonts'));
 });
 
 // Images are compressed and output to our ../web/images directory

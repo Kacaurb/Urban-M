@@ -14,7 +14,7 @@
 </head>
 
 <body>
-  <!--nav-->
+  <!--Navbar-->
   <nav class="navbar py-1 fixed-top navbar-expand-lg navbar-dark bg-dark bg-opacity">
     <div class="container">
       <div class="navbar-brand">
@@ -35,25 +35,22 @@
     </div>
   </nav>
 
-  <!-- To top btn -->
+  <!-- To top btn (style u _navbar.scss) -->
   <div id="to-top-btn" class="d-block">
     <button class="btn btn-primary bg-transparent">
-        <i class="fas fa-arrow-up"></i>
+        <i class="fas fa-angle-up"></i>
     </button>
   </div>
   <!-- End 'to top btn' -->
 
-  <!--End nav-->
-
-
-
+  <!--End of Navbar-->
 
   <!--Header-->
   <header id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel">
     <div class="carousel-inner heightimg">
-      <div class="carousel-caption position-heading text-secondary">
-        <p class="naslov">URBAN MAJA</p>
-        <p class="podnaslov">ARCHITECTURE</p>
+      <div class="carousel-caption position-heading text-secondary ">
+        <p class="naslov tracking-in-expand">URBAN MAJA</p>
+        <p class="podnaslov tracking-in-expand">ARCHITECTURE</p>
       </div>
       <div class="carousel-item active">
         <img src="images/Carousel1.jpg" class="fix d-block w-100 h-100" alt="...">
@@ -72,7 +69,7 @@
       </div>
     </div>
     <a href="#portfolio">
-      <img src="images/downbtn.png" alt="" width="4%" height="auto" class="position-absolute downbtn">
+      <img src="images/downbtn.png" alt="" width="4%" height="auto" class="position-absolute downbtn tracking-in-expand-fwd-top">
     </a>
   </header>
   <!--End header-->
@@ -80,10 +77,15 @@
   <!-- Section 1 (Portfolio)-->
   <section class="section-gap" id="portfolio">
     <div class="container">
-      <div class="row justify-content-center">
-        <div class="pb-50 text-center">
-          <h1>PORTFOLIO</h1>
+      <div class="row bounce">
+        <div class="col-md-6">
+          <div class="line"></div>
+          <h1 class="pt-3">PORTFOLIO</h1>
           <p class="pb-4">What we offer to our clients</p>
+        </div>
+        <div class="col-md-6 d-flex justify-content-end">
+          <div class="line position-absolute"></div>
+          <button class="m-2 btn mt-30 d-block">Download CV</button>
         </div>
       </div>
       <div class="row">
