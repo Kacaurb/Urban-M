@@ -1,18 +1,21 @@
 // Section 1 (Portfolio)
 
 .section-gap {
-    padding: 120px 0;
+    // background: url(../images/pozadina.jpg) no-repeat center right;
+    // background-repeat: cover;
+    // width: 100%;
+    padding: 100px 0;
 }
 
 .line{
     width: 20%;
     height: 10px;
-    background: $primary;
+    background-color: $success;
     border-radius: 10px;
 }
 
 .bounce {
-    animation: bounce-top 0.9s both;
+    animation: bounce-top 2s both;
 }
 
 
@@ -120,48 +123,9 @@
 
 // End of Section 1 (Portfolio)
 
-// Section 3 (Interior design)
-.overlay {
-    position: absolute;
-    top: 3%;
-    bottom: 3%;
-    left: 3%;
-    right: 3%;
-    opacity: 0;
-    transition: .5s ease;
-    background-color: #121212;
-}
 
-.thumbnail:hover .overlay {
-    opacity: 0.8;
-    border-radius: 10px;
-}
 
-.text {
-    color: white;
-    font-size: 20px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    -webkit-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-    text-align: center;
-}
-
-.spacer {
-    width: 40%;
-    height: 2px;
-    background-color: $info;
-}
-
-.image {
-    border-radius: 15px;
-}
-
-// End of section 3 (Projects part2)
-
-// Section 4 (About)
+// Section About
 @media (min-width: 992px) {
     .arch-img {
         position: absolute;

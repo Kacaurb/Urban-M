@@ -1,3 +1,4 @@
+
 .naslov {
     font-size: 20pt;
     font-weight: bolder;
@@ -42,12 +43,12 @@
 
 
 
-.active1 {
-    border-bottom: solid 2px $info;
+.active {
+    border-bottom: solid 2px $info !important;
 }
 
 .nav-item:hover {
-    @extend .active1 ;
+    @extend .active ;
 }
 
 
