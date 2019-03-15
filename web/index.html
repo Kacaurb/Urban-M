@@ -15,7 +15,7 @@
 
 <body>
   <!--Navbar-->
-  <nav class="navbar py-1 fixed-top navbar-expand-lg navbar-dark bg-dark bg-opacity">
+  <nav class="navbar py-1 fixed-top navbar-expand-lg navbar-dark">
     <div class="container">
       <div class="navbar-brand">
         <img width="10%" src="images/logotip.png">
@@ -26,7 +26,7 @@
       </div>
       <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
         <div class="navbar-nav">
-          <a class="nav-item nav-link mx-3 active active1" href="#">Home</a>
+          <a class="nav-item nav-link mx-3" href="#home">Home</a>
           <a class="nav-item nav-link mx-3" href="#portfolio">Portfolio</a>
           <a class="nav-item nav-link mx-3" href="#about">About</a>
           <a class="nav-item nav-link mx-3" href="#contact" tabindex="-1">Contact</a>
@@ -47,7 +47,7 @@
 
   <!--Header-->
   <header id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel">
-    <div class="carousel-inner heightimg">
+    <div id="home" class="carousel-inner heightimg">
       <div class="carousel-caption position-heading text-secondary ">
         <p class="naslov tracking-in-expand">URBAN MAJA</p>
         <p class="podnaslov tracking-in-expand">ARCHITECTURE</p>
@@ -77,7 +77,7 @@
   <!-- Section 1 (Portfolio)-->
   <section class="section-gap" id="portfolio">
     <div class="container">
-      <div class="row bounce">
+      <div class="row port">
         <div class="col-md-6">
           <div class="line"></div>
           <h1 class="pt-3">PORTFOLIO</h1>
@@ -85,10 +85,11 @@
         </div>
         <div class="col-md-6 d-flex justify-content-end">
           <div class="line position-absolute"></div>
-          <button class="m-2 btn mt-30 d-block">Download CV</button>
+          <p class="mt-2 d-block h1 pt-3 position-absolute">Download CV</p>
+          <button class="text-primary btn btn-dark h-25 pl-5 pr-5 mt-0 mt-6 bg-transparent">Here</button>
         </div>
       </div>
-      <div class="row">
+      <div class="row mt-4">
         <div class="col-lg-4">
           <div class="single-service">
             <a href="#archdesign" class="text-decoration-none a-transition">
@@ -126,149 +127,81 @@
   <!--End of Section 1 (Portfolio)-->
 
 
-  <!-- Section 2 (Arch design)-->
+  <!-- Section 2 (Gallery)-->
   <section class="section-gap bg-secondary contaienr-fluid" id="archdesign">
     <div class="container">
-      <div class="row align-items-center">
-        <div class="col-lg-6 text-info">
-          <h6 class="text-uppercase">Architecture</h6>
-          <p class="h3"><i>"Inspiration is for amateurs, the rest<br>
-              of us just show up and get to work."</i> <br>Chuck Clouse</p>
-          <p> Architecture is both the process and the product of planning,<br> designing, and constructing
-            buildings or any other structures.</p>
-          <a class="m-2 btn btn-outline-info mt-30" href="#projects">See our projects</a>
+      <div class="row">
+        <div class="mb-5 text-center col-12">
+          <a class="btn btn-outline-info filter-button text-info h1" data-filter="all">All</a>
+          <a class="btn btn-outline-info filter-button text-info h1" data-filter="section-1">Architectural design</a>
+          <a class="btn btn-outline-info filter-button text-info h1" data-filter="section-2">Interion design</a>
+          <a class="btn btn-outline-info filter-button text-info h1" data-filter="section-3">Furniture design</a>
         </div>
-        <div class="col-lg-6 justify-content-center align-items-center d-flex relative">
-          <div class="overlay overlay-bg"></div>
-          <img class="m-1 img-fluid rounded mx-auto" src="images/project1.jpg" alt=""></a>
-        </div>
-      </div>
-    </div>
-    <div id="carouselExampleControls" class="carousel slide " data-ride="carousel">
-      <div class="carousel-inner">
-        <div class="carousel-item active">
-          <div class="row ">
-            <div class="col-md-3 d-flex justify-content-center">
-              <img width="100%" data-toggle="modal" data-target="#modal1" style="cursor:pointer" height="100%" src="images/1.jpg"
-                alt="">
-            </div>
-            <div class="col-md-3 d-flex justify-content-center">
-              <img width="100%" data-toggle="modal" data-target="#modal2" style="cursor:pointer" height="100%" src="images/2.jpg"
-                alt="">
-            </div>
-            <div class="col-md-3 d-flex justify-content-center">
-              <img width="100%" data-toggle="modal" data-target="#modal3" style="cursor:pointer" height="100%" src="images/3.jpg"
-                alt="">
-            </div>
-            <div class="col-md-3 d-flex justify-content-center">
-              <img width="100%" data-toggle="modal" data-target="#modal4" style="cursor:pointer" height="100%" src="images/4.jpg"
-                alt="">
-            </div>
+        <br>
+  
+          <div class="col-lg-4 col-md-4 col-sm-4 col-xs-6 filter section-1">
+            <img src="images/1.jpg" class="w-100 h-100 pt-4 img-responsive">
+          </div>
+  
+          <div class="col-lg-4 col-md-4 col-sm-4 col-xs-6 filter section-2">
+            <img src="images/21.jpg" class="w-100 h-100 pt-4 img-responsive">
+          </div>
+  
+          <div class="col-lg-4 col-md-4 col-sm-4 col-xs-6 filter section-3">
+            <img src="images/31.jpg" class="w-100 h-100 pt-4 img-responsive">
+          </div>
+          <div class="col-lg-4 col-md-4 col-sm-4 col-xs-6 filter section-1">
+            <img src="images/2.jpg" class="w-100 h-100 pt-4 img-responsive">
+          </div>
+  
+          <div class="col-lg-4 col-md-4 col-sm-4 col-xs-6 filter section-2">
+            <img src="images/22.jpg" class="w-100 h-100 pt-4 img-responsive">
+          </div>
+  
+          <div class="col-lg-4 col-md-4 col-sm-4 col-xs-6 filter section-3">
+            <img src="images/32.jpg" class="w-100 h-100 pt-4 img-responsive">
+          </div>
+          <div class="col-lg-4 col-md-4 col-sm-4 col-xs-6 filter section-1">
+            <img src="images/4.jpg" class="w-100 h-100 pt-4 img-responsive">
+          </div>
+  
+          <div class="col-lg-4 col-md-4 col-sm-4 col-xs-6 filter section-2">
+            <img src="images/23.jpg" class="w-100 h-100 pt-4 img-responsive">
+          </div>
+  
+          <div class="col-lg-4 col-md-4 col-sm-4 col-xs-6 filter section-3">
+            <img src="images/33.jpg" class="w-100 h-100 pt-4 img-responsive">
+          </div>
+          <div class="col-lg-4 col-md-4 col-sm-4 col-xs-6 filter section-1">
+            <img src="images/5.jpg" class="w-100 h-100 pt-4 img-responsive">
+          </div>
+  
+          <div class="col-lg-4 col-md-4 col-sm-4 col-xs-6 filter section-2">
+            <img src="images/24.jpg" class="w-100 h-100 pt-4 img-responsive">
+          </div>
+  
+          <div class="col-lg-4 col-md-4 col-sm-4 col-xs-6 filter section-3">
+            <img src="images/34.jpg" class="w-100 h-100 pt-4 img-responsive">
           </div>
         </div>
-        <div class="carousel-item">
-          <div class="row">
-            <div class="col-md-3 d-flex justify-content-center gal-call">
-              <img width="100%" data-toggle="modal" data-target="#modal5" style="cursor:pointer" height="100%" src="images/5.jpg"
-                alt="">
-            </div>
-            <div class="col-md-3 d-flex justify-content-center">
-              <img width="100%" data-toggle="modal" data-target="#modal6" style="cursor:pointer" height="100%" src="images/6.jpg"
-                alt="">
-            </div>
-            <div class="col-md-3 d-flex justify-content-center">
-              <img width="100%" data-toggle="modal" data-target="#modal7" style="cursor:pointer" height="100%" src="images/7.jpg"
-                alt="">
-            </div>
-            <div class="col-md-3 d-flex justify-content-center">
-              <img width="100%" data-toggle="modal" data-target="#modal8" style="cursor:pointer" height="100%" src="images/8.jpg"
-                alt="">
-            </div>
-          </div>
-        </div>
-        <a class="carousel-control-prev" style="width: 100px; background: black;" href="#carouselExampleControls" role="button"
-          data-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="sr-only">Previous</span>
-        </a>
-        <a class="carousel-control-next" style="width: 100px; background: black;" href="#carouselExampleControls" role="button"
-          data-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="sr-only">Next</span>
-        </a>
-      </div>
-  </section>
-  <!--End of Section 2 (Arch design)-->
-
-  <!-- Section 3 (Interion design)-->
-
-
-
-  <section class="container" id="projects">
-    <div class="m-5 pt-6 text-center">
-      <h1>Our Recent Works may impress you</h1>
-      <p>Interior Design ~ Architecture Design ~ Exterior Design
-      </p>
-    </div>
-    <div class="row">
-      <div class="col-md-8 thumbnail px-2">
-        <img class="w-100 h-100 p-2 image" src="images/gallery-1.jpg" alt="">
-        <div class="overlay">
-          <div class="text">
-            <p class="h3 text-info">Project</p>
-            <hr class="spacer">
-            <p class="h6 text-secondary">Lorem ipsum dolor sit.</p>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-4 thumbnail">
-        <img class="w-100 h-100 p-2 image" src="images/gallery-3.jpg" alt="">
-        <div class="overlay m-4">
-          <div class="text">
-            <p class="h3 text-info">Project</p>
-            <hr class="spacer">
-            <p class="h6 text-secondary">Lorem ipsum dolor sit.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-md-4 thumbnail">
-        <img class="w-100 h-100 p-2 image" src="images/gallery-4.jpg" alt="">
-        <div class="overlay m-4">
-          <div class="text">
-            <p class="h3 text-info">Project</p>
-            <hr class="spacer">
-            <p class="h6 text-secondary">Lorem ipsum dolor sit.
-            </p>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-8 thumbnail px-2">
-        <img class="w-100 h-100 p-2 image" src="images/gallery-2.jpg" alt="">
-        <div class="overlay">
-          <div class="text">
-            <p class="h3 text-info">Project</p>
-            <hr class="spacer">
-            <p class="h6 text-secondary">Lorem ipsum dolor sit.</p>
-          </div>
-        </div>
-      </div>
     </div>
   </section>
-  <!--End of Section 3 (Interior design) -->
+  <!--End of Section 2 -->
 
-
+  
 
   <!-- About -->
-  <section class="container-fluid mt-6" id="about">
-    <div class="row">
-      <div class="col-md-6 arch-img">
-        <img src="images/arch-bg.jpg" alt="" class="img-fluid mx-auto w-100">
+  
+  <section class="container mt-6" id="about">
+    <div class="row pb-6 port1">
+      <div class="col-md-4">
+        <div class="line"></div>
+          <h1 class="pt-3">About me</h1>
+          <p class="pb-4">Urban Maja</p>
+          <img src="images/profile.png" alt="" class="w-50 h-auto">
       </div>
-      <div class="float-right col-md-6 mt-3 mb-3">
+      <div class="col-md-8 mt-3 mb-3 float-right ">
         <h6 class="text-uppercase">Master Architect</h6>
-        <h1>About me</h1>
         <p>
           <span>My name is Maja Urban and I am 27 years old architect from Serbia. My passion is
             architecture, but I am also very interested in art & design as well as in technical
@@ -299,7 +232,7 @@
 
   <!-- Contact -->
 
-  <section class="bg-secondary" id="contact">
+  <section class="bg-secondary container-fluid" id="contact">
     <div class="row">
       <div class="col-lg-4 p-6">
         <div class="d-block">
@@ -354,165 +287,7 @@
   <!-- Contact -->
 
 
-  <!-- Modal 1-->
-  <div class="modal fade" id="modal1" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered" role="document">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalCenterTitle">Project title</h5>
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-          </button>
-        </div>
-        <div class="modal-body">
-          <img width="100%" data-toggle="modal" style="cursor:pointer" height="100%" src="images/1.jpg" alt="">
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- Modal 2-->
-  <div class="modal fade" id="modal2" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered" role="document">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalCenterTitle">Project title</h5>
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-          </button>
-        </div>
-        <div class="modal-body">
-          <img width="100%" data-toggle="modal" style="cursor:pointer" height="100%" src="images/2.jpg" alt="">
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- Modal 3-->
-  <div class="modal fade" id="modal3" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered" role="document">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalCenterTitle">Project title</h5>
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-          </button>
-        </div>
-        <div class="modal-body">
-          <img width="100%" data-toggle="modal" style="cursor:pointer" height="100%" src="images/3.jpg" alt="">
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- Modal 4-->
-  <div class="modal fade" id="modal4" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered" role="document">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalCenterTitle">Project title</h5>
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-          </button>
-        </div>
-        <div class="modal-body">
-          <img width="100%" data-toggle="modal" style="cursor:pointer" height="100%" src="images/4.jpg" alt="">
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- Modal 5-->
-  <div class="modal fade" id="modal5" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered" role="document">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalCenterTitle">Project title</h5>
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-          </button>
-        </div>
-        <div class="modal-body">
-          <img width="100%" data-toggle="modal" style="cursor:pointer" height="100%" src="images/5.jpg" alt="">
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- Modal 6-->
-  <div class="modal fade" id="modal6" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered" role="document">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalCenterTitle">Project title</h5>
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-          </button>
-        </div>
-        <div class="modal-body">
-          <img width="100%" data-toggle="modal" style="cursor:pointer" height="100%" src="images/6.jpg" alt="">
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- Modal 7-->
-  <div class="modal fade" id="modal7" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered" role="document">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalCenterTitle">Project title</h5>
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-          </button>
-        </div>
-        <div class="modal-body">
-          <img width="100%" data-toggle="modal" style="cursor:pointer" height="100%" src="images/7.jpg" alt="">
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- Modal 8-->
-  <div class="modal fade" id="modal8" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered" role="document">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalCenterTitle">Project title</h5>
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-          </button>
-        </div>
-        <div class="modal-body">
-          <img width="100%" data-toggle="modal" style="cursor:pointer" height="100%" src="images/8.jpg" alt="">
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-        </div>
-      </div>
-    </div>
-  </div>
-
+ 
 
   <!-- Optional JavaScript -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
