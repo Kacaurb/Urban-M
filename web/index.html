@@ -15,10 +15,27 @@
 
 <body>
   <!--Navbar-->
-  <nav class="navbar py-1 fixed-top navbar-expand-lg navbar-dark">
-    <div class="container">
+  <nav class="menu-bar pl-4 pr-4 fixed-top navbar-expand-lg navbar-dark">
+    <div class="header-top">
+      <div class="container mt-3">
+        <div class="row nav-menu border-bottom">
+          <div class="col-lg-6 col-sm-6 col-4">
+            <a href="tel:+381 66 206 207" class="pr-3 h6">+381-66-206-207</a>
+            <a href="mailto:urbmaja@gmail.com" class="h6">urbmaja@gmail.com</a>
+          </div>
+          <div class="col-lg-6 col-sm-6 col-8 d-flex justify-content-end">
+            <ul class="mb-0 pb-1">
+              <li><a href="https://www.instagram.com/urban_m_design/"><i class="fab fa-instagram h4"></i></a></li>
+              <li><a href="https://www.linkedin.com/in/urbanmaja/"><i class="fab fa-linkedin h4"></i></a></li>
+              <li><a href="https://www.behance.net"><i class="fab fa-behance h4"></i></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="navbar pt-0 container">
       <div class="navbar-brand">
-        <img width="10%" src="images/logotip.png">
+        <img width="10%" class="width" src="images/logotip.png">
         <button class="navbar-toggler float-right" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
           aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -38,7 +55,7 @@
   <!-- To top btn (style u _navbar.scss) -->
   <div id="to-top-btn" class="d-block">
     <button class="btn btn-primary bg-transparent">
-        <i class="fas fa-angle-up"></i>
+      <i class="fas fa-angle-up"></i>
     </button>
   </div>
   <!-- End 'to top btn' -->
@@ -81,12 +98,12 @@
         <div class="col-md-6">
           <div class="line"></div>
           <h1 class="pt-3">PORTFOLIO</h1>
-          <p class="pb-4">What we offer to our clients</p>
+          <p class="pb-4 text-warning">What we offer to our clients</p>
         </div>
         <div class="col-md-6 d-flex justify-content-end">
           <div class="line position-absolute"></div>
           <p class="mt-2 d-block h1 pt-3 position-absolute">Download CV</p>
-          <button class="text-primary btn btn-dark h-25 pl-5 pr-5 mt-0 mt-6 bg-transparent">Here</button>
+          <button class="text-primary btn btn-dark h-25 pl-5 pr-5 mt-6 bg-transparent">Here</button>
         </div>
       </div>
       <div class="row mt-4">
@@ -133,72 +150,75 @@
       <div class="row">
         <div class="mb-5 text-center col-12">
           <a class="btn btn-outline-info filter-button text-info h1" data-filter="all">All</a>
-          <a class="btn btn-outline-info filter-button text-info h1" id="archdesign" data-filter="section-1">Architectural design</a>
-          <a class="btn btn-outline-info filter-button text-info h1" id="interiordesign" data-filter="section-2">Interion design</a>
-          <a class="btn btn-outline-info filter-button text-info h1" id="furnituredesign" data-filter="section-3">Furniture design</a>
+          <a class="btn btn-outline-info filter-button text-info h1" id="archdesign" data-filter="section-1">Architectural
+            design</a>
+          <a class="btn btn-outline-info filter-button text-info h1" id="interiordesign" data-filter="section-2">Interion
+            design</a>
+          <a class="btn btn-outline-info filter-button text-info h1" id="furnituredesign" data-filter="section-3">Furniture
+            design</a>
         </div>
         <br>
-  
-          <div class="col-lg-4 col-md-4 col-sm-4 col-xs-6 filter section-1">
-            <img src="images/1.jpg" class="w-100 h-100 pt-4 img-responsive">
-          </div>
-  
-          <div class="col-lg-4 col-md-4 col-sm-4 col-xs-6 filter section-2">
-            <img src="images/21.jpg" class="w-100 h-100 pt-4 img-responsive">
-          </div>
-  
-          <div class="col-lg-4 col-md-4 col-sm-4 col-xs-6 filter section-3">
-            <img src="images/31.jpg" class="w-100 h-100 pt-4 img-responsive">
-          </div>
-          <div class="col-lg-4 col-md-4 col-sm-4 col-xs-6 filter section-1">
-            <img src="images/2.jpg" class="w-100 h-100 pt-4 img-responsive">
-          </div>
-  
-          <div class="col-lg-4 col-md-4 col-sm-4 col-xs-6 filter section-2">
-            <img src="images/22.jpg" class="w-100 h-100 pt-4 img-responsive">
-          </div>
-  
-          <div class="col-lg-4 col-md-4 col-sm-4 col-xs-6 filter section-3">
-            <img src="images/32.jpg" class="w-100 h-100 pt-4 img-responsive">
-          </div>
-          <div class="col-lg-4 col-md-4 col-sm-4 col-xs-6 filter section-1">
-            <img src="images/4.jpg" class="w-100 h-100 pt-4 img-responsive">
-          </div>
-  
-          <div class="col-lg-4 col-md-4 col-sm-4 col-xs-6 filter section-2">
-            <img src="images/23.jpg" class="w-100 h-100 pt-4 img-responsive">
-          </div>
-  
-          <div class="col-lg-4 col-md-4 col-sm-4 col-xs-6 filter section-3">
-            <img src="images/33.jpg" class="w-100 h-100 pt-4 img-responsive">
-          </div>
-          <div class="col-lg-4 col-md-4 col-sm-4 col-xs-6 filter section-1">
-            <img src="images/5.jpg" class="w-100 h-100 pt-4 img-responsive">
-          </div>
-  
-          <div class="col-lg-4 col-md-4 col-sm-4 col-xs-6 filter section-2">
-            <img src="images/24.jpg" class="w-100 h-100 pt-4 img-responsive">
-          </div>
-  
-          <div class="col-lg-4 col-md-4 col-sm-4 col-xs-6 filter section-3">
-            <img src="images/34.jpg" class="w-100 h-100 pt-4 img-responsive">
-          </div>
+
+        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-6 filter section-1">
+          <img src="images/1.jpg" class="w-100 h-100 pt-4 img-responsive">
         </div>
+
+        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-6 filter section-2">
+          <img src="images/21.jpg" class="w-100 h-100 pt-4 img-responsive">
+        </div>
+
+        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-6 filter section-3">
+          <img src="images/31.jpg" class="w-100 h-100 pt-4 img-responsive">
+        </div>
+        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-6 filter section-1">
+          <img src="images/2.jpg" class="w-100 h-100 pt-4 img-responsive">
+        </div>
+
+        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-6 filter section-2">
+          <img src="images/22.jpg" class="w-100 h-100 pt-4 img-responsive">
+        </div>
+
+        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-6 filter section-3">
+          <img src="images/32.jpg" class="w-100 h-100 pt-4 img-responsive">
+        </div>
+        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-6 filter section-1">
+          <img src="images/4.jpg" class="w-100 h-100 pt-4 img-responsive">
+        </div>
+
+        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-6 filter section-2">
+          <img src="images/23.jpg" class="w-100 h-100 pt-4 img-responsive">
+        </div>
+
+        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-6 filter section-3">
+          <img src="images/33.jpg" class="w-100 h-100 pt-4 img-responsive">
+        </div>
+        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-6 filter section-1">
+          <img src="images/5.jpg" class="w-100 h-100 pt-4 img-responsive">
+        </div>
+
+        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-6 filter section-2">
+          <img src="images/24.jpg" class="w-100 h-100 pt-4 img-responsive">
+        </div>
+
+        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-6 filter section-3">
+          <img src="images/34.jpg" class="w-100 h-100 pt-4 img-responsive">
+        </div>
+      </div>
     </div>
   </section>
   <!--End of Section 2 -->
 
-  
+
 
   <!-- About -->
-  
+
   <section class="container mt-6" id="about">
     <div class="row pb-6 port1">
       <div class="col-md-4">
         <div class="line"></div>
-          <h1 class="pt-3">About me</h1>
-          <p class="pb-4">Urban Maja</p>
-          <img src="images/profile.png" alt="" class="w-50 h-auto">
+        <h1 class="pt-3">About me</h1>
+        <p class="pb-4 h5 text-warning">Urban Maja</p>
+        <img src="images/profile.png" alt="" class="w-50 h-auto">
       </div>
       <div class="col-md-8 mt-3 mb-3 float-right ">
         <h6 class="text-uppercase">Master Architect</h6>
@@ -234,36 +254,12 @@
 
   <section class="bg-secondary container-fluid" id="contact">
     <div class="row">
-      <div class="col-lg-4 p-6">
-        <div class="d-block">
-          <div class="d-inline-block mr-3">
-            <img src="images/home.svg" width="25px" alt="">
-          </div>
-          <div class="text-info d-inline-block">
-            <h5>Novi Sad, Serbia</h5>
-          </div>
+      <div class="container">
+        <div class="text-info d-flex justify-content-end pt-6 pb-3">
+          <div class="line position-apsolute"></div>
+          <h1 class="mt-2 d-block h1 pt-3 position-absolute">Get In Touch</h1>
         </div>
-        <div class="d-block">
-          <div class="d-inline-block mr-3">
-            <img src="images/call.svg" width="25px" alt="">
-          </div>
-          <div class="text-info d-inline-block">
-            <h5>+381 66 206 207</h5>
-            <p>Mon to Fri 9am to 6 pm</p>
-          </div>
-        </div>
-        <div class="d-block">
-          <div class="d-inline-block mr-3">
-            <img src="images/email.svg" width="25px" alt="">>
-          </div>
-          <div class="text-info d-inline-block">
-            <h5>urbmaja@gmail.com</h5>
-            <p>Send us your query anytime!</p>
-          </div>
-        </div>
-      </div>
-      <div class="col-lg-8 p-6">
-        <form class="form-area" class="contact-form text-right">
+        <form class="form-area contact-form text-right mt-6 mb-6">
           <div class="row">
             <div class="col-lg-6 form-group">
               <input name="name" placeholder="Enter your name" class="mb-20" type="text">
@@ -286,8 +282,33 @@
   </section>
   <!-- Contact -->
 
+  <!-- Footer -->
+  <footer class="container-fluid bg-primary p-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <img src="images/logotip.png" class="w-25 mb-4">
+          <h4 class="text-info">Master Architect</h4>
+          <h4 class="text-warning">Urban Maja</h4>
+          <h6 class="text-warning pt-5">© 2019 Copyright: Katarina Urban</h6>
+        </div>
+        <div class="col-md-8 mt-5 border-left">
+          <img src="images/Carousel3.jpg" alt="" class="p-1 pl-4 d-inline-block" style="width: 15em;">
+          <img src="images/Carousel4.jpg" alt="" class="p-1 pl-4 d-inline-block" style="width: 15em;">
+          <img src="images/Carousel1.jpg" alt="" class="p-1 pl-4 d-inline-block" style="width: 15em;">
+          <h5 class="text-warning p-4">Find more about me on social media</h5>
+          <ul class="mb-0 d-flex">
+            <li><a href="https://www.instagram.com/urban_m_design/"><i class="fab fa-instagram h4"></i></a></li>
+            <li><a href="https://www.linkedin.com/in/urbanmaja/"><i class="fab fa-linkedin h4"></i></a></li>
+            <li><a href="https://www.behance.net"><i class="fab fa-behance h4"></i></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- End of footer -->
 
- 
+
 
   <!-- Optional JavaScript -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->

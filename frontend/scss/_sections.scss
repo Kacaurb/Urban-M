@@ -8,10 +8,11 @@
 }
 
 .line{
-    width: 20%;
+    width: 110px;
     height: 10px;
     background-color: $success;
     border-radius: 10px;
+
 }
 
 .bounce {
@@ -154,7 +155,7 @@
 
     textarea {
         width: 100%;
-        height: 138px;
+        height: 131px;
         background: none;
         border: none;
         border-bottom: solid 3px $info;
@@ -169,3 +170,11 @@
         }
     }
 }
+
+// Footer
+
+.border-right{
+    border-right: 1px solid $info;
+    height: 100%;
+}
+

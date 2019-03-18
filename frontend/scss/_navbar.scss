@@ -1,3 +1,25 @@
+.header-top{
+    font-size: 12px;
+    a{
+      color:$info;
+    }
+    ul li{
+      display:inline-block;
+      margin-left: 15px;
+}
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+    .nav-menu {
+        display: none;
+    }
+    .width{
+        width: 20%;
+        margin-top: -5px;
+    }
+}
+
+
 
 .naslov {
     font-size: 20pt;
@@ -72,5 +94,7 @@
 .btn-primary , .btn-primary:hover{
     color: $primary;
 }
+
+
 
 

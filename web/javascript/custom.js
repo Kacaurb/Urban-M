@@ -21,9 +21,9 @@ window.addEventListener("scroll",function(){
 $(function () {
   $(window).on("scroll", function () {
     if ($(window).scrollTop() > 50) {
-      $(".navbar").addClass("bg-dark");
+      $(".menu-bar").addClass("bg-dark");
     } else {
-      $(".navbar").removeClass("bg-dark");
+      $(".menu-bar").removeClass("bg-dark");
     }
   });
 });
