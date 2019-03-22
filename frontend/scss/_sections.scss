@@ -145,7 +145,7 @@
         color: $info;
         margin-top: 22px;
 
-        &active {
+        &:active {
             background: none;
             border: none;
             border-bottom: solid 3px $info;
@@ -162,7 +162,7 @@
         color: $info;
         margin-top: 22px;
 
-        &active {
+        &:active {
             background: none;
             border: none;
             border-bottom: solid 3px $info;
