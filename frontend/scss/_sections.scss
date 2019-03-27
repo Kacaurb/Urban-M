@@ -149,14 +149,15 @@
         width: 100%;
         background: none;
         border: none;
-        border-bottom: solid 3px $info;
+        border: solid 1px $info;
         color: $info;
-        margin-top: 22px;
+        padding: 6px 0;
+        margin-top: 5px;
 
         &:active {
             background: none;
             border: none;
-            border-bottom: solid 3px $info;
+            border: solid 1px $info;
             color: $info;
         }
     }
@@ -166,14 +167,13 @@
         height: 131px;
         background: none;
         border: none;
-        border-bottom: solid 3px $info;
+        border: solid 1px $info !important;
         color: $info;
-        margin-top: 22px;
 
         &:active {
             background: none;
             border: none;
-            border-bottom: solid 3px $info;
+            border: solid 1px $info;
             color: $info;
         }
     }
