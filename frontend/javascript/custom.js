@@ -26,8 +26,6 @@ $(function () {
   });
 });
 
-//  Scroll down  
-
 
 
 // Gallery
