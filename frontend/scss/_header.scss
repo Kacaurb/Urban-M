@@ -1,11 +1,6 @@
 // Header
-.position-heading {
-    text-shadow: 0.8px 0.8px $secondary;
-}
 
-.heightimg {
-    max-height: 100vh;
-}
+
 
 .downbtn {
     margin-top: -15vh;
@@ -21,6 +16,56 @@
 
     
 }
+
+.carousel-item{
+    img{
+        background-size: left;
+        display: block;
+        overflow: hidden;
+        position: absolute;
+        height: 100vh;
+        width: auto !important;
+    }
+
+    .position-heading {
+        text-shadow: 0.8px 0.8px $secondary;
+        top: 33%;
+        z-index: 2;
+        padding: 43vh 0;
+    }
+}
+
+@include media-breakpoint-up(lg) { 
+    .carousel-item{
+        img{
+            background-size: left;
+            display: block;
+            overflow: hidden;
+            position: absolute;
+            height: 100%;
+            width: 100% !important;
+        }
+    
+       
+    }
+
+ }
+
+ @media (max-width: 1024px) { 
+    .carousel-item{
+        img{
+            background-size: left;
+            display: block;
+            overflow: hidden;
+            position: absolute;
+            height: 100%;
+            width: auto!important;
+        }
+    
+       
+    }
+
+ }
 
 .tracking-in-expand {
 	animation: tracking-in-expand 1s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
@@ -88,29 +133,50 @@
 
 }
 
-@media (min-width: 576px) {
-    .carousel-caption {
-        margin-bottom: 200px;
-    }
+
+
+.naslov {
+    font-size: 20pt;
+    font-weight: bolder;
+    letter-spacing: 4px;
+    margin-bottom: 0;
+    color: $white;
+    font-family: 'Roboto' , sans-serif;
+}
+
+.podnaslov {
+    font-size: 10pt;
+    letter-spacing: 10px;
+    padding-bottom: 10px;
+    color: $white;
+    font-family: 'Quicksand' , sans-serif;
 }
 
 
-@media (max-width: 414px) {
-    .position-heading {
-        margin-top: 40vh !important;
+
+@media (min-width: 576px) { 
+    .naslov {
+        font-size: 48pt;
+        font-weight: bolder;
+        letter-spacing: 4px;
+        margin-bottom: 0;
+        color: $white;
+        font-family: 'Roboto' , sans-serif;
     }
+
+    .podnaslov {
+        font-size: 16pt;
+        letter-spacing: 25px;
+        padding-left: 20px;
+        padding-bottom: 10px;
+        color: $white;
+        font-family: 'Quicksand' , sans-serif;
+    }
+
 }
 
-@media (min-width: 768px) {
-    .carousel-caption {
-        margin-bottom: 200px;
-    }
-}
-
-@media (min-width: 1200px) {
-    .carousel-caption {
-        margin-bottom: 400px;
-    }
+.active {
+    border-bottom: solid 2px $info !important;
 }
 
 // End of Header

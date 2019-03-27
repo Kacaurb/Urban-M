@@ -21,54 +21,6 @@
 
 
 
-.naslov {
-    font-size: 20pt;
-    font-weight: bolder;
-    letter-spacing: 4px;
-    margin-bottom: 0;
-    color: $white;
-    font-family: 'Roboto' , sans-serif;
-}
-
-.podnaslov {
-    font-size: 10pt;
-    letter-spacing: 10px;
-    padding-left: 10px;
-    padding-bottom: 10px;
-    color: $white;
-    font-family: 'Quicksand' , sans-serif;
-}
-
-
-
-@media (min-width: 576px) { 
-    .naslov {
-        font-size: 48pt;
-        font-weight: bolder;
-        letter-spacing: 4px;
-        margin-bottom: 0;
-        color: $white;
-        font-family: 'Roboto' , sans-serif;
-    }
-
-    .podnaslov {
-        font-size: 16pt;
-        letter-spacing: 25px;
-        padding-left: 20px;
-        padding-bottom: 10px;
-        color: $white;
-        font-family: 'Quicksand' , sans-serif;
-    }
-
-}
-
-
-
-
-.active {
-    border-bottom: solid 2px $info !important;
-}
-
 .nav-item:hover {
     @extend .active ;
 }
