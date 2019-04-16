@@ -38,8 +38,8 @@ $(document).ready(function () {
     if (value == "all") {
       $('.filter').show('1000');
     } else {
-      $(".filter").not('.' + value).hide('3000');
-      $('.filter').filter('.' + value).show('3000');
+      $(".filter").not('.' + value).hide('1000');
+      $('.filter').filter('.' + value).show('1000');
 
     }
   });
@@ -100,3 +100,12 @@ $(function () {
     }
   });
 });
+
+
+// Lightbox gallery
+
+$(document).on('click', '[data-toggle="lightbox"]', function(event) {
+  event.preventDefault();
+  $(this).ekkoLightbox();
+});
+

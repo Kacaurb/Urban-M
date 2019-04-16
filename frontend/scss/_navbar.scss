@@ -45,8 +45,11 @@
 
 .btn-primary , .btn-primary:hover{
     color: $success;
+    border-color: $success;
 }
 
-
+.navbar-brand {
+    margin-right: 0 !important;
+}
 
 

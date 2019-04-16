@@ -72,6 +72,7 @@ gulp.task('javascript', function () {
     './node_modules/bootstrap-cookie-alert/cookiealert-standalone.js',
     './node_modules/featherlight/src/featherlight.js',
     './node_modules/featherlight/src/featherlight.gallery.js',
+    './node_modules/ekko-lightbox/dist/ekko-lightbox.js',
     './javascript/custom.js'
   ];
   return gulp.src(jsOrder)
